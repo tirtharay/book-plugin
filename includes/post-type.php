@@ -1,6 +1,6 @@
 <?php
 // Register Custom Post Type: Book
-function cbp_register_book_post_type() {
+function bp_register_book_post_type() {
     $labels = array(
         'name'               => 'Books',
         'singular_name'      => 'Book',
@@ -28,4 +28,4 @@ function cbp_register_book_post_type() {
 
     register_post_type( 'book', $args );
 }
-add_action( 'init', 'cbp_register_book_post_type' );
+add_action( 'init', 'bp_register_book_post_type' );

@@ -1,6 +1,6 @@
 <?php
 // Register Custom Taxonomy: Genre
-function cbp_register_genre_taxonomy() {
+function bp_register_genre_taxonomy() {
     $labels = array(
         'name'              => 'Genres',
         'singular_name'     => 'Genre',
@@ -22,4 +22,4 @@ function cbp_register_genre_taxonomy() {
 
     register_taxonomy( 'genre', 'book', $args );
 }
-add_action( 'init', 'cbp_register_genre_taxonomy' );
+add_action( 'init', 'bp_register_genre_taxonomy' );
